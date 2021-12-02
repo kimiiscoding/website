@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US" style="background: rgb(0, 0, 0)">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="description" content="Hi there, and welcome to my website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://bulma.io">
+        <link rel="dns-prefetch" href="https://bulma.io">
+        <link rel="preconnect" href="https://img.shields.io">
+        <link rel="dns-prefetch" href="https://img.shields.io">
+        <link rel="preconnect" href="https://ssl.gstatic.com">
+        <link rel="dns-prefetch" href="https://ssl.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+        <title>Kimi Countdown</title>
+
+        <script src="https://kit.fontawesome.com/8ebdd49efd.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            #timer{
+                font-family: 'Roboto', sans-serif;;
+                color: #fff;
+                display: inline-block;
+                font-weight: 200;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            #timer > div{
+                padding: 10px;
+                border-radius: 3px;
+                background: #00BF96;
+                display: inline-block;
+            }
+
+            #timer div > span{
+                padding: 15px;
+                border-radius: 3px;
+                background: #00816A;
+                display: inline-block;
+            }
+
+            smalltext{
+                padding-top: 5px;
+                font-size: 16px;
+            }
+
+            strong {
+                color: hsl(0, 0%, 96%);
+            }
+
+            .navbar {
+                background-color: transparent;
+            }
+
+            .hicon {
+                margin-right: 4px;
+            }
+
+            a {
+                color:rgb(101, 177, 248);
+            }
+
+            a:hover {
+                color: rgb(179, 218, 255);
+            }
+
+            .iheader .icon {
+                --fa-primary-color: #00e7eb;
+                --fa-secondary-color: #009e6c;
+                --fa-secondary-opacity: .9;
+            }
+
+            .iiheader .icon {
+                --fa-primary-color: #009e6c;
+                --fa-secondary-color: #00e7eb;
+                --fa-primary-opacity: .7;
+                --fa-secondary-opacity: .9;
+            }
+
+            .background {
+                background: url('assets/background.png') no-repeat center;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .dcctext {
+                color: white;
+                background-size: cover !important;
+                background: linear-gradient(141deg,#ffb100 0,#ffc50d 71%, #ffc60d 100%) no-repeat center;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent
+            }
+
+            .deltext {
+                color: white;
+                background-size: cover !important;
+                background: linear-gradient(141deg,#2f88e5 0,#459be2 71%, #459ce0 100%) no-repeat center;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent
+            }
+
+            .header {
+                color: white;
+                background: linear-gradient(141deg, #ffffff 0, #ffffff 71%, #ffffff 100%) no-repeat;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .text {
+                font-size: 18px;
+            }
+
+            span.space {
+                width: 15px;
+                display: inline-block;
+            }
+
+            li a img {
+                vertical-align: sub;
+            }
+
+            li a {
+                font-size: 17px;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+
+            video {
+                object-fit: cover;
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+        </style>
+    </head>
+
+    <body class="has-text-white-ter">
+        <section class="hero">
+                <video src= "https://cdn.dribbble.com/users/10958/screenshots/14226512/media/ffb5ef7ea5bfb1feb5535a0ad47fd40d.mp4" playinline autoplay muted loop>
+                    <!-- <source src="https://cdn.dribbble.com/users/10958/screenshots/14226512/media/ffb5ef7ea5bfb1feb5535a0ad47fd40d.mp4" type="video/mp4"> -->
+                </video>
+            <section>
+                <nav class="navbar is-transparent is-fixed-top">
+                    <div class="navbar-brand">
+                        <!--<a class="navbar-item"><img src="assets/link.png" alt="link image" style="max-height: 70px;"></a>-->
+                        <a class="navbar-burger" id="burger" style="color: hsla(0, 0%, 100%, 0.371);">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu has-text-info" id="nav-links" style="background-color: transparent;">
+                        <div class="navbar-end">
+                            <a href="https://github.com/kimiiscoding" target="_blank" rel="noopener" class="navbar-item" style="color: white;"><span class="hicon"><i class="fab fa-github"></i></span>GitHub</a>
+                            <a href="https://discord.com/user/173225820503015424" target="_blank" rel="noopener" class="navbar-item" style="color: white;"><span class="hicon"><i class="fab fa-discord"></i></span>Discord</a>
+                            <a href="https://www.youtube.com/channel/UCJxClczxPXHV2CVligzlpjg" target="_blank" rel="noopener" class="navbar-item" style="color: white";><span class="hicon"><i class="fab fa-youtube"></i></span>YouTube</a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+           <br>
+        <footer class="footer">
+           <div class="hero spread">
+            <div class="container has-text-centered is-fullhd">
+                <br>
+                <h1 class="title"><span class="header">Until Christmas</span></h1>
+                <h2 class="subtitle"></h2>
+            <div class="has-text-centered">
+                <div id="timer">
+                    <div>
+                      <span class="days" id="day"></span>
+                      <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                      <span class="hours" id="hour"></span>
+                      <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                      <span class="minutes" id="minute"></span>
+                      <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                      <span class="seconds" id="second"></span>
+                      <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+                <p id="timer"></p>
+            </div>
+            </div>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+        <script src="timer.js"></script>
+
+    </body>
+</html>
